@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.presentation {
+    background-image: url(../Assets/to-do-list.jpg);
+    background-position: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 230px;
+}
+
+.center {
+    text-align: center;
+}
+
+#title{
+    background-color: white;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+    display: inline-block; 
+    position: relative;
+    top: 80px;
+    padding: 15px;
+    border: solid gray 2px;
+    border-radius: 15px;
+}
+
+.container{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.inserirTarefa {
+    padding: 10px;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    border: solid black 2px;
+}
+
+.botao{
+    padding: 10px;
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    color: #1b1b1b;
+    background-color: darkgray;
+}
+
+ul{
+    list-style-type: none;
+
+    -webkit-user-select: none;
+     -moz-user-select: none;  /* pra nao ficar selecionando as tarefas */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.item{
+    background-color: antiquewhite;
+    border: solid 1px #1b1b1b;
+    position: relative;
+    top: 15px;
+    margin: auto;
+    width: 65%;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.item:first-child{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.checkbox {
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.checkbox:hover{
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+    color:lightgreen;
+    text-decoration-color: #1b1b1b;
+}
+
+.delete-button {
+    background-color: lightgray;
+    cursor: pointer;
+    float: right;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 7px;
+    padding: 10px 13px;
+    position: relative;
+    bottom: 5px;
+}
+
+.delete-button:hover{
+    color: #1b1b1b;
+    background-color: tomato;
+}
